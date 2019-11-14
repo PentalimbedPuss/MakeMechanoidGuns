@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- ========== Heavy charge blaster ========== -->
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/TerrainDef/ThingDefs_Misc/Weapons[defName="Gun_ChargeBlasterHeavy"]/destroyOnDrop</xpath>
+    <value>
+      <destroyOnDrop>false</destroyOnDrop>
+    </value>
+  </Operation>
+</Patch>
+
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/TerrainDef/ThingDefs_Misc/Weapons[defName="Gun_ChargeBlasterHeavy"]/menuHidden</xpath>
+    <value>
+      <destroyOnDrop>false</destroyOnDrop>
+    </value>
+  </Operation>
+</Patch>
+
+<!-- ========== Inferno cannon ========== -->
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/TerrainDef/ThingDefs_Misc/Weapons[defName="Gun_InfernoCannon"]/destroyOnDrop</xpath>
+    <value>
+      <destroyOnDrop>false</destroyOnDrop>
+    </value>
+  </Operation>
+</Patch>
+
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/TerrainDef/ThingDefs_Misc/Weapons[defName="Gun_InfernoCannon"]/menuHidden</xpath>
+    <value>
+      <destroyOnDrop>false</destroyOnDrop>
+    </value>
+  </Operation>
+</Patch>
