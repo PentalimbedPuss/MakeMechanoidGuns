@@ -1,39 +1,113 @@
 <?xml version="1.0" encoding="utf-8" ?>
-
-<!-- ========== Heavy charge blaster ========== -->
 <Patch>
-  <Operation Class="PatchOperationReplace">
-    <xpath>/Defs/TerrainDef/ThingDefs_Misc/Weapons[defName="Gun_ChargeBlasterHeavy"]/destroyOnDrop</xpath>
-    <value>
-      <destroyOnDrop>false</destroyOnDrop>
-    </value>
+  <!-- ========== Heavy charge blaster ========== -->
+  <Operation Class="PatchOperationSequence">
+	<operations>
+		<li Class="PatchOperationAttributeSet">
+			<xpath>Defs/ThingDef[defName="Gun_ChargeBlasterHeavy"]</xpath>
+			<attribute>ParentName</attribute>
+			<value>BaseHumanMakeableGun</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Gun_ChargeBlasterHeavy"]/destroyOnDrop</xpath>
+			<value>
+			  <destroyOnDrop>false</destroyOnDrop>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Gun_ChargeBlasterHeavy"]/menuHidden</xpath>
+			<value>
+			  <menuHidden>false</menuHidden>
+			</value>
+		</li>
+		  
+		<li Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Gun_ChargeBlasterHeavy"]/statBases</xpath>
+			<value>
+			  <WorkToMake>63000</WorkToMake>
+			</value>
+		</li>
+		
+		<li Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Gun_ChargeBlasterHeavy"]</xpath>
+			<value>
+				<recipeMaker>
+				  <researchPrerequisite>ChargedShot</researchPrerequisite>
+				  <skillRequirements>
+					<Crafting>11</Crafting>
+				  </skillRequirements>
+				  <recipeUsers Inherit="False">
+					<li>FabricationBench</li>
+				  </recipeUsers>
+				</recipeMaker>
+			</value>
+		</li>
+		<li Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Gun_ChargeBlasterHeavy"]</xpath>
+			<value>
+				<costList>
+				  <Plasteel>100</Plasteel>
+				  <ComponentSpacer>3</ComponentSpacer>
+				</costList>
+			</value>
+		</li>
+	</operations>
   </Operation>
-</Patch>
-
-<Patch>
-  <Operation Class="PatchOperationReplace">
-    <xpath>/Defs/TerrainDef/ThingDefs_Misc/Weapons[defName="Gun_ChargeBlasterHeavy"]/menuHidden</xpath>
-    <value>
-      <destroyOnDrop>false</destroyOnDrop>
-    </value>
-  </Operation>
-</Patch>
-
-<!-- ========== Inferno cannon ========== -->
-<Patch>
-  <Operation Class="PatchOperationReplace">
-    <xpath>/Defs/TerrainDef/ThingDefs_Misc/Weapons[defName="Gun_InfernoCannon"]/destroyOnDrop</xpath>
-    <value>
-      <destroyOnDrop>false</destroyOnDrop>
-    </value>
-  </Operation>
-</Patch>
-
-<Patch>
-  <Operation Class="PatchOperationReplace">
-    <xpath>/Defs/TerrainDef/ThingDefs_Misc/Weapons[defName="Gun_InfernoCannon"]/menuHidden</xpath>
-    <value>
-      <destroyOnDrop>false</destroyOnDrop>
-    </value>
+  
+  
+  
+  <!-- ========== Inferno cannon ========== -->
+  <Operation Class="PatchOperationSequence">
+	<operations>
+		<li Class="PatchOperationAttributeSet">
+			<xpath>Defs/ThingDef[defName="Gun_InfernoCannon"]</xpath>
+			<attribute>ParentName</attribute>
+			<value>BaseHumanMakeableGun</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Gun_InfernoCannon"]/destroyOnDrop</xpath>
+			<value>
+			  <destroyOnDrop>false</destroyOnDrop>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Gun_InfernoCannon"]/menuHidden</xpath>
+			<value>
+			  <menuHidden>false</menuHidden>
+			</value>
+		</li>
+		  
+		<li Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Gun_InfernoCannon"]/statBases</xpath>
+			<value>
+			  <WorkToMake>64000</WorkToMake>
+			</value>
+		</li>
+		
+		<li Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Gun_InfernoCannon"]</xpath>
+			<value>
+				<recipeMaker>
+				  <researchPrerequisite>ChargedShot</researchPrerequisite>
+				  <skillRequirements>
+					<Crafting>12</Crafting>
+				  </skillRequirements>
+				  <recipeUsers Inherit="False">
+					<li>FabricationBench</li>
+				  </recipeUsers>
+				</recipeMaker>
+			</value>
+		</li>
+		<li Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Gun_InfernoCannon"]</xpath>
+			<value>
+				<costList>
+				  <Plasteel>80</Plasteel>
+				  <Chemfuel>100</Chemfuel>
+				  <ComponentSpacer>4</ComponentSpacer>
+				</costList>
+			</value>
+		</li>
+	</operations>
   </Operation>
 </Patch>
