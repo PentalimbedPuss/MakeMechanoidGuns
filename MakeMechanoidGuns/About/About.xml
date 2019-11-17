@@ -2,6 +2,6 @@
 <ModMetaData>
   <name>Don't take my guns - PentalimbedP's Edit</name>
   <author>PentalimbedP and cuddle</author>
-  <description>Allows the player to create a 'mechanoid' gun.\n\n- Add Inferno Cannon and Heavy Charge Blaster.\n- without overwriting vanilla defs and thus makes it compatiable with CE</description>
+  <description>Allows the player to create a 'mechanoid' gun.\n\n- Add Inferno Cannon and Heavy Charge Blaster.\n- without overwriting vanilla defs.</description>
   <supportedVersions><li>1.0</li></supportedVersions>
 </ModMetaData>
